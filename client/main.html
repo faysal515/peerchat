@@ -1,0 +1,31 @@
+<head>
+    <title>webrtc-peerjs</title>
+</head>
+
+
+<body>
+<h1>Welcome to Meteor!</h1>
+{{> sAlert}}
+{{> hello}}
+</body>
+
+<template name="hello">
+    <h2>Video Chat</h2>
+    <div id="chat-container">
+
+    </div>
+
+    <h2>Controls</h2>
+    <div>
+        <p>Your id: <span id="myPeerId">...</span></p>
+        <p>Make a call</p><br>
+        <input type="text" placeholder="Call user id..." id="remotePeerId">
+        <p><a href="#" id="makeConnection">Call</a></p>
+
+    </div>
+
+
+    <form id="chatBox" >
+        <input type="text" id="sendText" />
+    </form>
+</template>
